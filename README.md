@@ -1,7 +1,7 @@
 ## GoF Design Pattern
 
-1. Iterator
-1. Adapter
+1. Iterator ✅
+1. Adapter ✅
 1. Template Method
 1. Factory Method
 1. Singleton
