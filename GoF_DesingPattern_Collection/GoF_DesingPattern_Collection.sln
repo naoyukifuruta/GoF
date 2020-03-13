@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoF_DesingPattern_Collection", "GoF_DesingPattern_Collection\GoF_DesingPattern_Collection.csproj", "{AB10D1A8-EB91-4129-AD84-4CAB993C8642}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterator.csproj", "{9C89CDA9-5F82-42AE-BDBD-FA53E3C234E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB10D1A8-EB91-4129-AD84-4CAB993C8642}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB10D1A8-EB91-4129-AD84-4CAB993C8642}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB10D1A8-EB91-4129-AD84-4CAB993C8642}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB10D1A8-EB91-4129-AD84-4CAB993C8642}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C89CDA9-5F82-42AE-BDBD-FA53E3C234E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C89CDA9-5F82-42AE-BDBD-FA53E3C234E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C89CDA9-5F82-42AE-BDBD-FA53E3C234E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C89CDA9-5F82-42AE-BDBD-FA53E3C234E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
