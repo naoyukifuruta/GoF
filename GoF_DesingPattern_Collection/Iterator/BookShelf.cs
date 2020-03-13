@@ -1,15 +1,14 @@
-﻿using System;
+﻿using System.Collections.Generic;
+
 namespace Iterator
 {
     public class BookShelf : IAggregate
     {
-        private Book[] _books;
+        private List<Book> _books;
 
-        private int _last = 0;
-
-        public BookShelf(int maxsize)
+        public BookShelf()
         {
-            this._books = new Book[maxsize];
+            this._books = new List<Book>();
         }
 
         public Book GetBookAt(int index)
@@ -19,13 +18,12 @@ namespace Iterator
 
         public void AppendBook(Book book)
         {
-            this._books[_last] = book;
-            _last++;
+            this._books.Add(book);
         }
 
         public int GetLength()
         {
-            return _last;
+            return this._books.Count;
         }
 
         public IIterator Iterator()
