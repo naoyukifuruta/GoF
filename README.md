@@ -1,7 +1,4 @@
-# GoF
-GoF Design Pattern
-
-## 
+## GoF Design Pattern
 
 1. Iterator
 1. Adapter
@@ -29,6 +26,7 @@ GoF Design Pattern
 
 ---
 
-## 参考書
+### 参考書
+
 増補改訂版Java言語で学ぶデザインパターン入門  
 https://www.hyuki.com/dp/
