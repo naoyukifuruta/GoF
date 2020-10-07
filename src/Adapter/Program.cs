@@ -4,9 +4,19 @@
     {
         static void Main()
         {
-            Print print = new PrintBanner("Hello");
-            print.PrintWeak();
-            print.PrintStrong();
+            // クラスによるAdapterパターン
+            {
+                ClassAdapter.IPrint p = new ClassAdapter.PrintBanner("Hello");
+                p.PrintWeak();
+                p.PrintStrong();
+            }
+
+            // オブジェクトによるAdapterパターン
+            {
+                ObjectAdapter.BasePrint p = new ObjectAdapter.PrintBanner("Hello");
+                p.PrintWeak();
+                p.PrintStrong();
+            }
         }
     }
 }
