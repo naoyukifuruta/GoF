@@ -2,30 +2,23 @@
 
 namespace Composite
 {
-    public class File : Entry
+    public class File : IEntry
     {
-        private string _name;
-        private int _size;
+        private string _name = null;
 
-        public File(string name, int size)
+        public File(string someName)
         {
-            _name = name;
-            _size = size;
+            _name = someName;
         }
 
-        public override string GetName()
+        public void Output(int someDepth)
         {
-            return _name;
-        }
+            for (int i = 0; i < someDepth; i++)
+            {
+                Console.Write("    ");
+            }
 
-        public override int GetSize()
-        {
-            return _size;
-        }
-
-        protected override void PrintList(string prefix)
-        {
-            Console.WriteLine(prefix + "/" + this);
+            Console.WriteLine("{0} : {1}", this.GetType().ToString(), _name);
         }
     }
 }

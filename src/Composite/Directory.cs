@@ -1,42 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Composite
 {
-    public class Directory : Entry
+    public class Directory : IEntry
     {
-        private string _name;
-        private List<Entry> _direcrtory = new List<Entry>();
+        private string _name = null;
+        private List<IEntry> _entries = new List<IEntry>();
 
-        public Directory(string name)
+        public Directory(string someName)
         {
-            _name = name;
+            _name = someName;
         }
 
-        public override string GetName()
+        public void AddEntry(IEntry someEntry)
         {
-            return _name;
+            _entries.Add(someEntry);
         }
 
-        public override int GetSize()
+        public void Output(int someDepth)
         {
-            return _direcrtory.Count();
-        }
-
-        public new Entry Add(Entry entry)
-        {
-            _direcrtory.Add(entry);
-            return this;
-        }
-
-        protected override void PrintList(string prefix)
-        {
-            Console.WriteLine(prefix + "/" + this);
-            foreach (var entry in _direcrtory)
+            for (int i = 0; i < someDepth; i++)
             {
-                entry.PrintList();
-                //PrintList(prefix + "/" + _name);
+                Console.Write("    ");
+            }
+
+            Console.WriteLine("{0} : {1}", this.GetType().ToString(), _name);
+
+            foreach (var item in _entries)
+            {
+                item.Output(someDepth + 1);
             }
         }
     }
