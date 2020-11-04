@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace _15_Facade
+namespace Facade
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            PageMaker.PageMaker.MakeWelcomePage("BarSaburoh@mail.com", "welcome.html");
         }
     }
 }
