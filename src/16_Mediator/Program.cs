@@ -1,12 +1,19 @@
 ﻿using System;
 
-namespace _16_Mediator
+namespace Mediator
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Application.EnableVisualStyles();
+            //Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new LoginForm());
+
+            Console.WriteLine("未実装");
+
+            // MacのVisualStudioではフォームアプリを作れなかったのでコードだけコメントで残す
         }
     }
 }
