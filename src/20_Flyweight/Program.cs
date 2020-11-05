@@ -1,12 +1,21 @@
 ﻿using System;
 
-namespace _20_Flyweight
+namespace Flyweight
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            if (args.Length == 0)
+            {
+                Console.WriteLine("please enter a number !");
+                Console.ReadLine();
+                System.Environment.Exit(0);
+
+            }
+            BigString bigString = new BigString(args[0]);
+
+            bigString.print();
         }
     }
 }
