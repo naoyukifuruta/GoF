@@ -1,12 +1,20 @@
 ﻿using System;
 
-namespace _17_Observer
+namespace Observer
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            NumberGenerator generator = new RandamNumberGenerator();
+
+            var observer1 = new DigitObserver(generator);
+            var observer2 = new GraphObserver(generator);
+
+            generator.AddObserver(observer1);
+            generator.AddObserver(observer2);
+
+            generator.Execute();
         }
     }
 }
