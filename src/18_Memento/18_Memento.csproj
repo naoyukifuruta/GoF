@@ -6,4 +6,7 @@
     <RootNamespace>_18_Memento</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Game\" />
+  </ItemGroup>
 </Project>
