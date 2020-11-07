@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _22_Command
+namespace Command
 {
     class Program
     {
