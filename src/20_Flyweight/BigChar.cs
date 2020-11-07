@@ -26,7 +26,7 @@ namespace Flyweight
 
                 }
             }
-            catch (IOException e)
+            catch
             {
                 this.fontdata = charname + "?";
             }
